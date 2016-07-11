@@ -24,7 +24,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    
+    self.title = @"Facebook Like and Send";
     [self setupUI];
     self.sendButton.hidden = YES;
     self.msgTextField.delegate = self;
@@ -46,16 +46,17 @@
     [self.view addSubview:self.msgTextField];
     
     // setup Like button and Send button
+    self.sendButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.sendButton.frame = CGRectMake(350, 160, 60, 20);
+    self.sendButton.backgroundColor = [UIColor redColor];
+    [self.sendButton setTitle:@"Send" forState:UIControlStateNormal];
+    [self.sendButton setTintColor:[UIColor blueColor]];
+    [self.view addSubview:self.sendButton];
+    
     self.likeButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.likeButton.frame = CGRectMake(350, 160, 20, 20);
     [self.likeButton setImage:[UIImage imageNamed:@"likeClick"] forState:UIControlStateNormal];
     [self.view addSubview:self.likeButton];
-    
-    self.sendButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.sendButton.frame = CGRectMake(350, 160, 20, 20);
-    [self.sendButton setTitle:@"Send" forState:UIControlStateNormal];
-    [self.sendButton setTintColor:[UIColor blueColor]];
-    [self.view addSubview:self.sendButton];
     
 }
 
@@ -67,16 +68,20 @@
     
     if (range.length == 0) {
         comment = [NSString stringWithFormat:@"%@%@", textField.text, string];
+//        NSLog(@"---------->range.length == 0");
     } else {
-        comment = [textField.text substringFromIndex:textField.text.length - range.length];
+        comment = [textField.text substringToIndex:textField.text.length - range.length];
+//        NSLog(@"-------->rang.length > 0");
     }
     
     if (comment.length == 0) {
         // Show Like
         [self showLikeButton];
+//        NSLog(@"---------->showLikeButton");
     } else {
         // Show Send
         [self showSendButton];
+//        NSLog(@"---------->showSendButton");
     }
     
     
@@ -94,6 +99,7 @@
         springAnimation.velocity = [NSValue valueWithCGPoint:CGPointMake(8, 8)];
         springAnimation.springBounciness = 20.f;
         [self.sendButton pop_addAnimation:springAnimation forKey:@"sendAnimation"];
+//        NSLog(@"==========>showSendButton");
     }
 }
 
