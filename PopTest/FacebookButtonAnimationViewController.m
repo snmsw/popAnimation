@@ -48,9 +48,9 @@
     // setup Like button and Send button
     self.sendButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.sendButton.frame = CGRectMake(350, 160, 60, 20);
-    self.sendButton.backgroundColor = [UIColor redColor];
+//    self.sendButton.
     [self.sendButton setTitle:@"Send" forState:UIControlStateNormal];
-    [self.sendButton setTintColor:[UIColor blueColor]];
+    self.sendButton.titleLabel.textColor = [UIColor blueColor];
     [self.view addSubview:self.sendButton];
     
     self.likeButton = [UIButton buttonWithType:UIButtonTypeCustom];

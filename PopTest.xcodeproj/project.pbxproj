@@ -20,6 +20,8 @@
 		3C12CAB51D32487A00189551 /* WrongPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C12CAB41D32487A00189551 /* WrongPasswordViewController.m */; };
 		3C12CAB81D3248A800189551 /* CustomVCTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C12CAB71D3248A800189551 /* CustomVCTransitionViewController.m */; };
 		3C12CABB1D3248B500189551 /* CustomModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C12CABA1D3248B500189551 /* CustomModelViewController.m */; };
+		3CAEAF401D33D4B900DEAA5D /* PresentingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAEAF3F1D33D4B900DEAA5D /* PresentingAnimationController.m */; };
+		3CAEAF431D33D4D100DEAA5D /* DismissingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAEAF421D33D4D100DEAA5D /* DismissingAnimationController.m */; };
 		82DB58608DB8788D5EBFD97E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E57229FBC182021B1FE356A6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,10 @@
 		3C12CAB71D3248A800189551 /* CustomVCTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomVCTransitionViewController.m; sourceTree = "<group>"; };
 		3C12CAB91D3248B500189551 /* CustomModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomModelViewController.h; sourceTree = "<group>"; };
 		3C12CABA1D3248B500189551 /* CustomModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomModelViewController.m; sourceTree = "<group>"; };
+		3CAEAF3E1D33D4B900DEAA5D /* PresentingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentingAnimationController.h; sourceTree = "<group>"; };
+		3CAEAF3F1D33D4B900DEAA5D /* PresentingAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentingAnimationController.m; sourceTree = "<group>"; };
+		3CAEAF411D33D4D100DEAA5D /* DismissingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissingAnimationController.h; sourceTree = "<group>"; };
+		3CAEAF421D33D4D100DEAA5D /* DismissingAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissingAnimationController.m; sourceTree = "<group>"; };
 		60CC76238ACE22206EC1F6E0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CA1415DF982419AF71FB15D1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E57229FBC182021B1FE356A6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +143,10 @@
 				3C12CAB71D3248A800189551 /* CustomVCTransitionViewController.m */,
 				3C12CAB91D3248B500189551 /* CustomModelViewController.h */,
 				3C12CABA1D3248B500189551 /* CustomModelViewController.m */,
+				3CAEAF3E1D33D4B900DEAA5D /* PresentingAnimationController.h */,
+				3CAEAF3F1D33D4B900DEAA5D /* PresentingAnimationController.m */,
+				3CAEAF411D33D4D100DEAA5D /* DismissingAnimationController.h */,
+				3CAEAF421D33D4D100DEAA5D /* DismissingAnimationController.m */,
 				3C12CA831D32396700189551 /* Main.storyboard */,
 				3C12CA861D32396700189551 /* Assets.xcassets */,
 				3C12CA881D32396700189551 /* LaunchScreen.storyboard */,
@@ -372,11 +382,13 @@
 			files = (
 				3C12CAB21D32485800189551 /* FacebookButtonAnimationViewController.m in Sources */,
 				3C12CABB1D3248B500189551 /* CustomModelViewController.m in Sources */,
+				3CAEAF401D33D4B900DEAA5D /* PresentingAnimationController.m in Sources */,
 				3C12CAB51D32487A00189551 /* WrongPasswordViewController.m in Sources */,
 				3C12CAB81D3248A800189551 /* CustomVCTransitionViewController.m in Sources */,
 				3C12CA821D32396700189551 /* ViewController.m in Sources */,
 				3C12CA7F1D32396700189551 /* AppDelegate.m in Sources */,
 				3C12CAAF1D32416500189551 /* CustomCell.m in Sources */,
+				3CAEAF431D33D4D100DEAA5D /* DismissingAnimationController.m in Sources */,
 				3C12CA7C1D32396700189551 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
